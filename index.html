@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Archit Bansal | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--bg:#0f172a;
+--card:rgba(30,41,59,0.6);
+--text:#f1f5f9;
+--sub:#94a3b8;
+--accent:#3b82f6;
+--accent2:#6366f1;
+}
+
+*{
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+font-family:Inter, sans-serif;
+background:var(--bg);
+color:var(--text);
+}
+
+header{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#0f172a,#1e293b,#020617);
+background-size:200% 200%;
+animation:gradient 8s ease infinite;
+}
+
+@keyframes gradient{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+header h1{
+font-size:52px;
+margin-bottom:10px;
+}
+
+header p{
+color:var(--sub);
+font-size:20px;
+}
+
+.buttons{
+margin-top:25px;
+}
+
+.btn{
+padding:12px 22px;
+border-radius:8px;
+margin:6px;
+text-decoration:none;
+font-weight:500;
+}
+
+.primary{
+background:var(--accent);
+color:white;
+}
+
+.social{
+margin-top:25px;
+}
+
+.social a{
+margin:0 12px;
+display:inline-block;
+transition:0.3s;
+}
+
+.social a:hover{
+transform:scale(1.2);
+}
+
+nav{
+position:sticky;
+top:0;
+background:#020617;
+padding:15px;
+text-align:center;
+z-index:100;
+}
+
+nav a{
+margin:0 15px;
+color:var(--sub);
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+color:var(--accent);
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+section{
+margin:60px 0;
+}
+
+h2{
+border-left:4px solid var(--accent);
+padding-left:12px;
+margin-bottom:30px;
+}
+
+.card{
+background:var(--card);
+backdrop-filter:blur(10px);
+padding:22px;
+border-radius:12px;
+margin-top:20px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 40px rgba(0,0,0,0.4);
+}
+
+.timeline{
+border-left:2px solid var(--accent);
+padding-left:20px;
+}
+
+.timeline-item{
+margin-bottom:30px;
+position:relative;
+}
+
+.timeline-item::before{
+content:"";
+position:absolute;
+left:-9px;
+top:5px;
+width:14px;
+height:14px;
+background:var(--accent);
+border-radius:50%;
+}
+
+.skills span{
+background:#334155;
+padding:8px 14px;
+border-radius:20px;
+margin:6px;
+display:inline-block;
+}
+
+footer{
+text-align:center;
+padding:40px;
+color:var(--sub);
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>Archit Bansal</h1>
+
+<p>Financial Data Analyst • Portfolio Analytics • Investment Reporting</p>
+
+<div class="buttons">
+<a class="btn primary" href="Archit_Bansal_CV.pdf">Download CV</a>
+</div>
+
+<div class="social">
+
+<a href="https://www.linkedin.com/in/archit-bansal-91a994176" target="_blank">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#3b82f6" viewBox="0 0 24 24">
+<path d="M19 0h-14c-2.761 0-5 2.239-5 
+5v14c0 2.761 2.239 5 5 
+5h14c2.761 0 5-2.239 
+5-5v-14c0-2.761-2.239-5-5-5z"/>
+</svg>
+
+</a>
+
+<a href="https://github.com/twistedcobra08" target="_blank">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#3b82f6" viewBox="0 0 24 24">
+<path d="M12 .5c-6.63 0-12 5.373-12 
+12 0 5.303 3.438 9.8 8.205 
+11.385"/>
+</svg>
+
+</a>
+
+</div>
+
+</header>
+
+
+<nav>
+
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+
+</nav>
+
+
+<div class="container">
+
+<section id="about">
+
+<h2>About</h2>
+
+<div class="card">
+
+<p>
+I am a Financial Data Analyst with 3+ years of experience at a wealthtech startup, specializing in portfolio analytics, reconciliation, and investment reporting. Based in Delhi, I have strong working knowledge of financial instruments across asset classes and focus on transforming raw investment data into structured ETL pipelines by developing robust logic to aggregate and standardize custodial data.
+</p>
+
+<p>
+My experience includes end-to-end portfolio reconciliation, performance and fund reporting, and supporting international clients while working with global custodians such as Citi, UBS, JPMorgan, and Bank of Singapore.
+</p>
+
+<p>
+I also bring a solid foundation in investment operations, controls, and data flows, strengthened through Risk Advisory internships at Deloitte and KPMG, including on-site audit support.
+</p>
+
+</div>
+
+</section>
+
+
+<section id="education">
+
+<h2>Education</h2>
+
+<div class="card">
+
+<strong>Bachelor of Commerce (Hons)</strong><br>
+Vivekananda Institute of Professional Studies – GGSIPU<br>
+2020 – 2023
+
+</div>
+
+<div class="card">
+
+<strong>Senior Secondary (Commerce)</strong><br>
+Sachdeva Public School – CBSE<br>
+2018 – 2020
+
+</div>
+
+</section>
+
+
+<section id="experience">
+
+<h2>Experience</h2>
+
+<div class="timeline">
+
+<div class="timeline-item card">
+
+<strong>Senior Financial Data Analyst</strong><br>
+Valuefy Solutions Pvt. Ltd.
+
+<ul>
+<li>International client reporting (Middle-East Asia / South-East Asia)</li>
+<li>Worked with 30+ custodian data feeds</li>
+<li>Transaction recording, reconciliation and portfolio reporting</li>
+</ul>
+
+</div>
+
+<div class="timeline-item card">
+
+<strong>Risk Advisory Intern</strong><br>
+Deloitte
+
+<ul>
+<li>Internal control and compliance testing</li>
+<li>Financial documentation and audit support</li>
+<li>Risk analysis for enterprise processes</li>
+</ul>
+
+</div>
+
+<div class="timeline-item card">
+
+<strong>Risk Advisory Intern</strong><br>
+KPMG
+
+<ul>
+<li>Assisted with audit procedures</li>
+<li>Process documentation and compliance reviews</li>
+<li>Supported risk advisory engagements</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="card">
+
+<strong>Portfolio Reconciliation Automation</strong>
+
+<p>
+Developed logic for automated reconciliation of custodial transaction feeds for 10+ custodians.
+</p>
+
+</div>
+
+<div class="card">
+
+<strong>Financial Data Aggregation Logic</strong>
+
+<p>
+Designed ETL-style logic to standardize multi-custodian investment data.
+</p>
+
+</div>
+
+</section>
+
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<span>Portfolio Analytics</span>
+<span>Investment Reporting</span>
+<span>Reconciliation</span>
+<span>Financial Data Analysis</span>
+<span>SQL</span>
+<span>Excel</span>
+<span>HTML</span>
+<span>CSS</span>
+
+</div>
+
+</section>
+
+</div>
+
+
+<footer>
+
+Email: architbansal2002@gmail.com
+
+</footer>
+
+
+</body>
+
+</html>
